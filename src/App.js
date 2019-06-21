@@ -5,7 +5,7 @@ import Carousel from './components/Carousel';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Productlist from './components/Productlist';
-
+import BaiTapGioHang from './components/BaiTapGioHang/BaiTapGioHang';
 
 export default class App extends Component {
   constructor(props) {
@@ -49,7 +49,7 @@ export default class App extends Component {
   
     return (
       <div className="App">
-        <div className="bg-dark">  
+        {/* <div className="bg-dark">  
           <Header title={this.tieuDe}></Header>
           <Carousel></Carousel>
           <h1 className="text-white text-center">BEST SMARTPHONE</h1>
@@ -58,8 +58,8 @@ export default class App extends Component {
           <Productlist xemChiTiet={this.xemChiTiet} mangSanPham={this.mangLapTop}></Productlist>
           <Footer></Footer>
           <Modal contenModal={this.state.contenModal}></Modal>
-        </div>
-        {/* <DanhSachSinhVien></DanhSachSinhVien> */}
+        </div> */}
+        <BaiTapGioHang/>
       </div>
     );
   }
